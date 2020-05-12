@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "University-Event.WebUI", "University-Event.WebUI\University-Event.WebUI.csproj", "{119B4454-B588-49B4-B005-88567093C2BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "University-Event.WebUI", "University-Event.WebUI\University-Event.WebUI.csproj", "{119B4454-B588-49B4-B005-88567093C2BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "University-Event.Domain", "University-Event.Domain\University-Event.Domain.csproj", "{909116F0-84ED-4FF0-9291-0CBCD3828C39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{119B4454-B588-49B4-B005-88567093C2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{119B4454-B588-49B4-B005-88567093C2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{119B4454-B588-49B4-B005-88567093C2BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909116F0-84ED-4FF0-9291-0CBCD3828C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909116F0-84ED-4FF0-9291-0CBCD3828C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909116F0-84ED-4FF0-9291-0CBCD3828C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909116F0-84ED-4FF0-9291-0CBCD3828C39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
