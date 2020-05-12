@@ -14,7 +14,6 @@ namespace University_Event.Domain
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
-        public string Group { get; set; }
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }

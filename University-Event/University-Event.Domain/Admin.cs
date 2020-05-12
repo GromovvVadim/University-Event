@@ -11,6 +11,7 @@ namespace University_Event.Domain
     {
         [Key]
         public string Email { get; set; }
+        [DataType(DataType.Password)]
         public string Password { get; set; }
     }
 }
