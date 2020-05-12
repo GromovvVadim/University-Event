@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using University_Event.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace University_Event.WebUI
 {
@@ -26,6 +27,22 @@ namespace University_Event.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options => //CookieAuthenticationOptions
+                {
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Login/Index");
+                });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Student", policy =>
+                    policy.RequireAssertion(context =>
+                        context.User.IsInRole("Student")));
+                options.AddPolicy("Admin", policy =>
+                    policy.RequireAssertion(context =>
+                        context.User.IsInRole("Admin")));
+            });
 
             IConfigurationRoot configuration = new ConfigurationBuilder()
                .SetBasePath(Directory.GetCurrentDirectory())
@@ -51,13 +68,15 @@ namespace University_Event.WebUI
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthentication();    
+
+            app.UseAuthorization();     
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }
