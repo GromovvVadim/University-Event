@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--<title>Material Design Bootstrap</title>-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!--Google Maps-->
+  <script src="https://maps.google.com/maps/api/js"></script>
+</head> 
+<body> 
+<main>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>ЛНУ</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto smooth-scroll">
+            <li class="nav-item">
+              <a href = "#home" class="nav-link waves-effect waves-light">Головна</a>
+            </li>
+             <li class="nav-item">
+              <a href = "#mf" class="nav-link waves-effect waves-light">Головні особливості</a>
+            </li>
+             <li class="nav-item">
+              <a href = "#gallery" class="nav-link waves-effect waves-light">Заходи</a>
+            </li>
+             <li class="nav-item">
+              <a href = "#cont" class="nav-link waves-effect waves-light">Контакти</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  <br>
+  <br>
+  <br>
+  <div class="box">
+  <div class="box-header">
+      <center>
+          <h2 class="mb-5 font-weight-bold">Увійти</h2>
+      </center>
+  </div>
+  <form class="form-horizontal">
+      <div class="form-group">
+        <h3 class="h3-responsive"><p style="text-indent:20px;">Номер залікової книжки:</p></h3>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+      </div>
+      <div class="form-group">
+        <h3 class="h3-responsive"><p style="text-indent:20px;">Пароль:</p></h3>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+      </div>
+      <div class="text-center">
+          <button name="login" value="Login" class="btn btn-primary"> 
+              <i class="fa fa-sign-in"></i> Увійти 
+          </button> 
+      </div>
+  </form>
+  <br>
+  <br>
+  <br>
+</div>
+
+</main>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color indigo lighten-3 pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">LNU</h5>
+        
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Рекомендовано:</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="https://www.lnu.edu.ua/">Сайт університету</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="https://www.facebook.com/franko.lviv.ua">Соцмережі</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Контакти</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> м. Львів, вул. Університетська 1</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> LNU@gmail.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> +298 485 254</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+    <div class="row pb-3">
+
+      <div class="col-md-12">
+
+        <div class="mb-5 flex-center">
+
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+          </a>
+          <a class="pin-ic">
+            <i class="fab fa-pinterest fa-lg white-text"> </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright text-center py-3 mdb-color indigo lighten-3 ">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> TD </a>
+  </div>
+</footer>
+<!-- Footer -->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
